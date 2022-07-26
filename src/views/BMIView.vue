@@ -5,7 +5,7 @@
         </div>
         <h1 class="bmi-header">{{ bmi }}</h1>
         <div class="slider-container">
-            <input class="slider" type="range" min="0.0" max="120.0" v-model="bmi" name="BMI_Slider" disabled>
+            <input class="slider" type="range" min='0.0' max='120.0' step='0.01' v-model="bmi" name="BMI_Slider" disabled>
             <div class="bars-container">
                 <span class="underweight-bar" 
                     v-bind:style="[bmi <= 30 ? 
@@ -92,14 +92,15 @@ export default {
 .slider-container {
     display: grid;
     justify-content: center;
+    width: 100%;
     margin-top: 15%;
 }
 
 
 .bars-container {
     display: flex;
+    padding: 0px 14px;
     justify-content: center;
-    width: 100%;
 }
 
 .description-container {
@@ -110,7 +111,7 @@ export default {
 
 .underweight-bar {
     height: 35px;
-    width: 150px;
+    width: 30%;
     margin-right: 3px;
     border-radius: 20px 0 0 20px;
     background-color: rgb(186, 186, 186);
@@ -118,7 +119,7 @@ export default {
 
 .underweightText {
     height: 35px;
-    width: 150px;
+    width: 148px;
     margin-right: 3px;
     text-align: center;
     color: rgb(45, 116, 239);
@@ -127,28 +128,28 @@ export default {
 
 .normal-bar {
     height: 35px;
-    width: 150px;
+    width: 60%;
     background-color:rgb(186, 186, 186);
 }
 
 .normalText {
     height: 35px;
-    width: 150px;
+    width: 148px;
     text-align: center;
     color: rgb(45, 116, 239);
 }
 
 .overweight-bar {
     height: 35px;
-    width: 150px;
-    margin-left: 2px;
+    width: 30%;
+    margin-left: 3px;
     border-radius: 0 20px 20px 0;
     background-color:rgb(186, 186, 186);
 }
 
 .overweightText {
     height: 35px;
-    width: 150px;
+    width: 148px;
     margin-left: 2px;
     text-align: center;
     color: rgb(45, 116, 239);
