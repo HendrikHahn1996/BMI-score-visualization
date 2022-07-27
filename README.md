@@ -29,4 +29,4 @@ To run this project ->
 
 1. clone this repository
 2. run "npm -i"
-3. npm run serve
+3. run "npm run serve"
