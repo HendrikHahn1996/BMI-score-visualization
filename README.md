@@ -22,3 +22,11 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+########
+
+To run this project ->
+
+1. clone this repository
+2. run "npm -i"
+3. npm run serve
