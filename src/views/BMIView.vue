@@ -8,19 +8,19 @@
             <input class="slider" type="range" min='0.0' max='120.0' step='0.01' v-model="bmi" name="BMI_Slider" disabled>
             <div class="bars-container">
                 <span class="underweight-bar" 
-                    v-bind:style="[bmi <= 30 ? 
+                    v-bind:style="[bmi < 30 ? 
                         {'background-color': 'red'} 
                         : 
                         {'backgroud-color': 'rgb(186, 186, 186)'}]">
                 </span>
                 <span class="normal-bar"
-                    v-bind:style="[bmi > 30 && bmi < 90 ? 
+                    v-bind:style="[bmi >= 30 && bmi <= 90 ? 
                         {'background-color': 'rgb(73, 193, 153)'} 
                         : 
                         {'backgroud-color': 'rgb(186, 186, 186)'}]">
                 </span>
                 <span class="overweight-bar"
-                    v-bind:style="[bmi >= 90 ? 
+                    v-bind:style="[bmi > 90 ? 
                         {'background-color': 'red'} 
                         : 
                         {'backgroud-color': 'rgb(186, 186, 186)'}]">
@@ -28,21 +28,21 @@
             </div>
             <div class="description-container">
                 <span class="underweightText"
-                    v-bind:style="[bmi <= 30 ? 
+                    v-bind:style="[bmi < 30 ? 
                         {'font-weight': 'bolder'} 
                         : 
                         {'font-weight': 'normal'}]">
                 Underweight
                 </span>
                 <span class="normalText"
-                    v-bind:style="[bmi > 30 && bmi < 90 ? 
+                    v-bind:style="[bmi >= 30 && bmi <= 90 ? 
                         {'font-weight': 'bolder'} 
                         : 
                         {'font-weight': 'normal'}]">
                 Normal
                 </span>
                 <span class="overweightText"
-                    v-bind:style="[bmi >= 90 ? 
+                    v-bind:style="[bmi > 90 ? 
                         {'font-weight': 'bolder'} 
                         : 
                         {'font-weight': 'normal'}]">
