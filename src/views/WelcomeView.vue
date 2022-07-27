@@ -82,6 +82,7 @@ export default {
     font-weight: bold;
     background-color: #E1E1E1;
     font-family: 'Montserrat', sans-serif;
+    outline: none;
 }
 
 #nameInput {
@@ -98,7 +99,7 @@ export default {
     border: 1px solid black;
     border: none;
     padding-left: 5px;
-    margin-top: 3%
+    margin-top: 3%;
 }
 
 label {

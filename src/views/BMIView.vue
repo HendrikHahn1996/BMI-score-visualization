@@ -159,6 +159,7 @@ export default {
     -webkit-appearance: none;
 }
 
+
 .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     height: 0;
@@ -188,6 +189,7 @@ button {
     button {
         width: 300px;
         font-size: 1.8vw;
+        margin-left: -40px;
     }
 }
 
@@ -195,6 +197,7 @@ button {
     button {
         width: 250px;
         font-size: 1.8vw;
+        margin-left: -50px;
     }
 }
 
@@ -202,7 +205,21 @@ button {
     button {
         width: 250px;
         font-size: 3.5vw;
+        margin-left: -70px;
+    }
+
+    .bars-container {
+        width: 350px;    
+    }  
+
+    .slider {
+        width: 350px;
+        margin-left: 4%;
+    }
+
+    .description-container {
+        width: 350px;
+        margin-left: 5%;
     }
 }
-
 </style>
